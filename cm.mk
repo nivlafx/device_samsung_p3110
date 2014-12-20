@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
-# Copyright (C) 2014 SlimRoms Project
+# Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,15 +22,15 @@ PRODUCT_RELEASE_NAME := p3110
 TARGET_SCREEN_HEIGHT := 480
 TARGET_SCREEN_WIDTH := 600
 
-# Inherit some common Slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_tablet_wifionly.mk)
+# Inherit some common CyanogenMod stuff.
+$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p3110/full_p3110.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p3110
-PRODUCT_NAME := slim_p3110
+PRODUCT_NAME := cm_p3110
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-P3110
 PRODUCT_MANUFACTURER := samsung
